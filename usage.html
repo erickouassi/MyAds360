@@ -1,0 +1,91 @@
+Usage
+<p>There are two pieces required to add an ad placement to your site.<br> 
+    You will need to create an empty <xmp><div></div></xmp>
+
+    element where you would like to place a new ad placement, 
+    and you will need to include the client library.</p>
+
+To start, add the following in your site's <head>: <br>
+    <script async src="./adstext.js"></script>
+    <script async src="./by_random.js"></script>
+    <script async src="./by_day.js"></script>
+    <script async src="./by_week.js"></script>
+    <script async src="./by_month.js"></script>
+   </br>
+
+To add the placement on your site, you will need to add an empty <div>:<br>
+        <xmp>
+        <div>
+        <script async src="https://ads360.cf/adstext.js"></script>
+        <div class="d-flex align-items-center justify-content-center adText"></div>
+        <span class="d-flex align-items-center justify-content-center" style="font-size:12px;">
+        <a href="https://ads360.cf/"  target="_blank" style=" text-decoration: none;">Ad by ads360.cf</a>
+        </span>
+        </div>
+        </xmp>
+<br>
+<!-- Ad banner-->
+<div><div class="adText" style=" text-decoration: none;"></div>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" target="_blank" style="text-decoration: none;">Ad by ads360.cf</a>
+</span></div>
+<br>
+Themes<br>
+The following themes are available on all ad placement types:<br>
+
+Ad Types
+Image placement
+Text placement
+
+<hr>
+<a style="display:block" href="index.html">Return Home</a>
+<a style="display:block" href="Grid-of-Buttons-Ad.html">Grid-of-buttons Ads</a>
+<a style="display:block" href="index.html">Return Home</a>
+<a style="display:block" href="ads_text.html">Ads Text</a>
+
+<br>
+<!-- Ad banner-->
+<div>
+<!-- Display random ad on page onload-->
+<div class="byDayAdText"></div>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+</span></div>
+
+<br>
+
+<div>
+<!-- Display random ad on page onload-->
+<span id="randomTextAd"></span>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+</span></div>
+
+<br>
+
+<br>
+
+<div>
+<!-- Daily display ad-->
+<span id="todayTextAd"></span>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+</span></div>
+
+<br>
+
+<div>
+<!-- Weekly display ad-->
+<span id="weeklyTextAd"></span>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+</span></div>
+
+<br>
+
+<div>
+<!-- Monthly display ad-->
+<span id="monthlyTextAd"></span>
+<span class="align-items-center justify-content-center" style="font-size:12px;">
+<a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+</span></div>
