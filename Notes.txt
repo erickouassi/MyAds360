@@ -1,0 +1,85 @@
+About
+Ads360 is an open source project built and maintained by Eric Kouassi. 
+Ads360 is not affiliated with or supported by Github Inc. in any way. 
+Please do not contact Github for help with Ads360. 
+Instead, please reach out to @Eric_Kouassi with any questions or concerns.
+Ad Inserter – Ad Manager
+
+//
+A fast, light-weight and highly configurable JS library to rotate advertisements.
+marketing
+ads
+advertisements
+ad-management
+advertisement-management
+publicity
+ad-manager
+ad-rotation
+rotate-advertisements
+rotate-ads
+//
+Ad size:
+320 x 50: Mobile leaderboard
+480 x 32: Mobile banner (landscape)
+320 x 100: Large mobile banner
+468 x 60: Banner
+728 x 90: Leaderboard
+300 x 250: Inline rectangle
+320 x 480: Smartphone interstitial (portrait)
+480 x 320: Smartphone interstitial (landscape)
+768 x 1024: Tablet interstitial (portrait)
+1024 x 768: Tablet interstitial (landscape)
+
+
+Image size:
+728 x 90: Leaderboard
+468 x 60: Banner
+320 x 50: Mobile leaderboard
+300 x 250: Inline rectangle
+====
+Rotate ads
+Rotate ads on the same spot to fight ad blindness or test different ads against each other.
+====
+Schedule ads
+Prepare your ad setups by setting a start or expiry date and time for your ads.
+=====
+Many Ad Campaigns, One Ad Server
+There is no limit to the number of banners, advertising campaigns, or ad groups that can be created on your ad server.
+
+===========
+
+					<!-- -->
+<!--<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./adstext.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;byDayAdText&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>-->
+<!--<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./adstext.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;byDayAdText&quot;&gt;&lt;/div&gt;
+&lt;span style=&quot;font-size:12px;&quot;&gt;
+&lt;a href=&quot;https://ads360.cf/&quot;&gt;Ad by ads360.cf&lt;/a&gt;
+&lt;/span&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>-->
+    <!--<xmp>
+    <div><script async src="./adstext.js"></script>
+     Display random ad on page onload
+    <div class="byDayAdText"></div>
+    <span class="#" style="font-size:12px;">
+    <a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
+    </span></div>
+    </xmp>-->
+    
+====
+
