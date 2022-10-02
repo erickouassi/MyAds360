@@ -14,6 +14,7 @@ PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
 async function getBanners() {
+            // by_day.json 
     let url = 'https://opensheet.elk.sh/1jTJHyJHcv9pDy4c_dZMRxE34QBbmmAC6P2c0106Ba_0/adByDay';
     try {
         let res = await fetch(url, {

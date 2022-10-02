@@ -41,15 +41,7 @@ async function renderByWeekAdText() {
     var index = (day - 1) % myItem;   
     //console.log(day);  // index of the array
     //console.log(now);
-    //console.log(start); 
-    
-    // Option 2 (Set offset yourself)
-    /*let adtext = await getBanners();
-    var offset = 163; //Start date
-    var day = new Date().getDay(); // 0,1,2,3...6
-    var myItem = adtext.length;
-    var index = (day + offset) % myItem;   // index of the array
-    console.log(index);*/
+    //console.log(start);
 
    let dTextAd = `<div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
      <span>${adtext[index].adText}</span><br>
