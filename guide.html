@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ads360.cf | Ads Management</title>
+	<!-- The following are some stylesheets for testing -->
+	<!-- Sanitize.css reset -->
+	<!-- <link href="https://unpkg.com/sanitize.css" rel="stylesheet" /> -->
+	<!-- Latest release version of Simple.css -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.css"> -->
+	<!-- Latest commit from GitHub -->
+	<!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css"> -->
+	<!-- Local version -->
+	<link rel="stylesheet" href="simple.css">
+</head>
+
+<body id="top">
+	<header>  
+		<nav>
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./guide.html">Guide</a></li>
+				<li><a href="faq.html">Faq</a></li>
+				<li><a href="https://github.com/erickouassi/ads360-v1">GitHub repo</a></li>
+			</ul>
+		</nav>
+        <h1>Guide</h1>
+        <p>Self-hosting: (Plan ahead and schedule your ads)</p>
+    </header>
+    <main>
+		<section id="example">
+			<h4># How to</h4>
+			<p>Fork this repository <a href="https://github.com/erickouassi/MyAds360/fork" target="_blank">https://github.com/erickouassi/MyAds360/fork</a> in your account.</p>
+			<p>You must host the necessary <mark>.js & .json</mark> files yourself, and include them in your page directly inside &lt;script&gt; tags.</p>
+			<hr>
+			<ul>
+				<li>
+					To use <code>by_random.js</code> (Random Ad per site viste) file:
+					<ul>
+						<li>Go to the Random Ad <a href="./by_random.json">by_random.json</a> file.</li>
+						<li>Change to your own advertising campaigns (<mark>adLink</mark>,<mark>adText</mark> and <mark>cta</mark>).</li>
+						<li>View the file <a href="./by_random.js" target="_blank">by_random.js</a></li>
+					</ul>
+				</li>
+			</ul>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+{
+&quot;id_ad&quot;: &quot;7&quot;,
+&quot;date&quot;: &quot;3/3/2022&quot;,
+&quot;dayText&quot;: &quot;Sunday&quot;,
+&quot;program&quot;: &quot;Add program name&quot;,
+&quot;adLink&quot;: &quot;Add your affiliate link&quot;,
+&quot;adText&quot;: &quot;Some text, Some text, Some text, Some text. &quot;,
+&quot;cta&quot;: &quot;Call to action&quot;,
+&quot;company&quot;: &quot;Company name&quot;,
+&quot;dateNow&quot;: &quot;&quot;,
+&quot;duration&quot;: &quot;90&quot;
+}
+</code>
+</pre>
+</div>
+</div>
+<p>👇 Include this in your HTML page.</p>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./by_random.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;randomTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>
+			<hr>
+			<ul>
+				<li>
+					To use <code>by_day.js</code> (same ad for the day) file:
+					<ul>
+						<li>Go to the Daily Ad <a href="./by_day.json">by_day.json</a> file</li>
+						<li>Change to your own advertising campaigns on <mark>adLink</mark>,<mark>adText</mark> and <mark>cta</mark> with focus on <mark>dayText</mark>.</li>
+						<li>View file <a href="./by_day.js" target="_blank">by_day.js</a></li>
+					</ul>
+				</li>
+			</ul>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+{
+&quot;id_ad&quot;: &quot;1&quot;,
+&quot;date&quot;: &quot;3/3/2022&quot;,
+&quot;dayText&quot;: &quot;Monday&quot;,
+&quot;program&quot;: &quot;Add program name&quot;,
+&quot;adLink&quot;: &quot;Add your affiliate link&quot;,
+&quot;adText&quot;: &quot;Some text, Some text, Some text, Some text. &quot;,
+&quot;cta&quot;: &quot;Call to action&quot;,
+&quot;company&quot;: &quot;Company name&quot;,
+&quot;dateNow&quot;: &quot;&quot;,
+&quot;duration&quot;: &quot;90&quot;
+}
+</code>
+</pre>
+</div>
+</div>
+<p>👇 Include this in your HTML page.</p>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./by_day.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;todayTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>
+			<hr>
+			<ul>
+				<li>
+					To use <code>by_week.js</code> (same ad for 1 week) file:
+					<ul>
+						<li>Go to the Weekly Ad <a href="./by_week.json">by_week.json</a> file.</li>
+						<li>Change to your own advertising campaigns on <mark>adLink</mark>,<mark>adText</mark> and <mark>cta</mark> with focus on <mark>weekNumber</mark>.</li>
+						<li>View file <a href="./by_week.js" target="_blank">by_week.js</a></li>
+					</ul>
+				</li>
+			</ul>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+{
+&quot;id_ad&quot;: &quot;1&quot;,
+&quot;date&quot;: &quot;3/3/2022&quot;,
+&quot;weekNumber&quot;: &quot;41&quot;,
+&quot;program&quot;: &quot;Add program name&quot;,
+&quot;adLink&quot;: &quot;Add your affiliate link&quot;,
+&quot;adText&quot;: &quot;Some text, Some text, Some text, Some text. &quot;,
+&quot;cta&quot;: &quot;Call to action&quot;,
+&quot;company&quot;: &quot;Company name&quot;,
+&quot;dateNow&quot;: &quot;&quot;,
+&quot;duration&quot;: &quot;90&quot;
+}
+</code>
+</pre>
+</div>
+</div>
+<p>👇 Include this in your HTML page.</p>
+
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./by_week.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;weeklyTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>
+			<hr>
+			<ul>
+				<li>
+					To host <code>by_month.js</code> (same ad for 1 month) file:
+					<ul>
+						<li>Go to the Monthly Ad <a href="./by_month.json">by_month.json</a> file</li>
+						<li>Change to your own advertising campaigns on <mark>adLink</mark>,<mark>adText</mark> and <mark>cta</mark> with focus on <mark>monthText</mark>.</li>
+						<li>View file <a href="./by_month.js" target="_blank">by_month.js</a></li>
+					</ul>
+				</li>
+			</ul>
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+{
+&quot;id_ad&quot;: &quot;1&quot;,
+&quot;date&quot;: &quot;3/3/2022&quot;,
+&quot;monthText&quot;: &quot;May&quot;,
+&quot;program&quot;: &quot;Add program name&quot;,
+&quot;adLink&quot;: &quot;Add your affiliate link&quot;,
+&quot;adText&quot;: &quot;Some text, Some text, Some text, Some text. &quot;,
+&quot;cta&quot;: &quot;Call to action&quot;,
+&quot;company&quot;: &quot;Company name&quot;,
+&quot;dateNow&quot;: &quot;&quot;,
+&quot;duration&quot;: &quot;90&quot;
+}
+</code>
+</pre>
+</div>
+</div>
+<p>👇 Include this in your HTML page.</p>
+
+<div class="language-plaintext highlighter-rouge">
+<div class="highlight">
+<pre class="highlight">
+<code>
+&lt;div&gt;&lt;script async src=&quot;./by_month.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;monthlyTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+</div>
+        </section>
+	</main>
+	<footer>
+		<div>
+		<span>
+			<a href="/">Home</a>
+			<a href="#">Disclamaire</a>
+			<a href="#">Privacy</a>
+			<a href="#">Terms</a>
+		</span>| © <span id="year"></span> <a  href="https://www.yorisi.com/" target="_blank" >YORISI LLC</a>
+			<script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
+		</div>
+	</footer>
+</body>
+
+</html>
