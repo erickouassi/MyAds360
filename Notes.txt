@@ -82,4 +82,15 @@ There is no limit to the number of banners, advertising campaigns, or ad groups 
     </xmp>-->
     
 ====
+https://www.business-directory.org.uk/
 
+==============
+
+https://www.riiwards.net/
+====
+No Backend
+No Databases, all client-side (just simple HTML, CSS & Javascript)
+=================
+You can see the Google Sheet here
+==========
+Clean, responsive storefront boilerplate.(No database or backend.)
