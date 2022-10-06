@@ -4,188 +4,78 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ads360.cf | Ads Management</title>
-	<!-- The following are some stylesheets for testing -->
-	<!-- Sanitize.css reset -->
-	<!-- <link href="https://unpkg.com/sanitize.css" rel="stylesheet" /> -->
-	<!-- Latest release version of Simple.css -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.css"> -->
-	<!-- Latest commit from GitHub -->
-	<!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css"> -->
+	<title>Ads360+ | Ads Management</title>
+	<link rel="icon" type="image/x-icon" href="https://emojicdn.elk.sh/🥳?style=google">
 	<!-- Local version -->
 	<link rel="stylesheet" href="simple.css">
+	<link rel="stylesheet" href="custom.css">
+    
 </head>
 
-<body id="top">
+<body>
 	<header>  
 		<nav>
 			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./about.html">About</a></li>
+				<li><a href="./" class="current">Home</a></li>
+				<li><a href="./demo.html">Demo</a></li>
 				<li><a href="./guide.html">Guide</a></li>
 				<li><a href="./faq.html">Faq</a></li>
 				<li><a href="https://github.com/erickouassi/MyAds360" target="_blank">GitHub repo</a></li>
 			</ul>
 		</nav>
-        <h1>MyAd360+</h1>
-		<p>Display Your Affiliate Ads Across Several Websites and Web Applications</p></header>
-	<nav>
-		<ul>
-			<li>
-				<a href="#example">Ad Example</a>
+        <h1>Ads360<sup>+</sup> An Ad Rotation Solution</h1>
+		<!-- -->
+		<p>Rotate Your Ads Based on <mark>Time of Day</mark>, <mark>Day</mark>, <mark>Week</mark>, <mark>Month</mark> or <mark>Random</mark></p>
+		</header>
+		<main>
+		<P class="notice"><strong>Are you using Ads360<sup>+</sup>?</strong><br>
+			If you are, it would be wonderful if you thought about giving me <a href="https://ko-fi.com/erickouassi" target="_blank">a coffee</a> as a token of your appreciation. 
+			Such things are crucial to the success of open source software. 
+			You can either Buy Me <a href="https://ko-fi.com/erickouassi" target="_blank">a Coffee</a> or even <a href="https://github.com/sponsors/erickouassi" target="_blank">support me on GitHub</a>. ❤️
+			</P>
+			<h2>Core Features</h2>
+			<ul>
+				<li>Self-hosting & it's Free!</li>
+				<li>Advertising campaign:
+					<ul>
+						<li>Randon</li>
+						<li>Time of Day (Morning, Afternoon & Evening)</li>
+						<li>Daily</li>
+						<li>Weekly</li>
+						<li>Monthly</li>
+					</ul>
+				</li>
+				<li>Insert Any Code Anywhere on the Page</li>
+				<!--<li>Weekly ad campaign</li>
+				<li>Monthly ad campaign</li>-->
+				<li>Advertising Formats/Types:
+					<ul>
+						<li>Text/html Ads</li>
+						<li>Image Ads:
+						<ul>
+							<li>.png</li>
+							<li>.jpg</li>
+							<li>.gif</li>
+						</ul>
+						</li>
+						<li>3rd Party Ads (JavaScript ads)</li>
+					</ul>
+				</li>
+				<li>No Databases, all client-side (just simple HTML, CSS & Javascript)</li>
+			</ul>
+			<h2>Goals of ad rotation include:</h2>
+			<p>
 				<ul>
-					<li><a href="#random_ad">Randon ads</a></li>
-					<li><a href="#daily_ad">Daily ads</a></li>
-					<li><a href="#weekly_ad">Weekly ads</a></li>
-					<li><a href="#monthly_ad">Monthly ads</a></li>
+					<li>Allow webmasters to run advertisements for a variety of companies or programs.</li>
+					<li>Keep your advertisement "fresh." Users are more inclined to overlook an ad if it never changes.</li>
+					<li>By displaying more than one ad every page load on websites and blogs, you can expose users to more advertising.</li>
 				</ul>
-			</li>
-        </ul>
-	</nav>
-	<main>
-		<section id="example">
-			<header>
-				<p>Below are few examples of your display ad that's fully automated and dynamic:</p>
-			</header>
-			<article id="#placement">
-				<header>
-					<strong>Ad example & placement</strong>
-				</header>
-				
-                <div> You place this code anywhere you want to display your ad.
-	<p><img src="./img/example-code-1.png" alt="code template"></p>
-	<p>👇 Output</p>
-                    <div><script async src="./adstext.js"></script>
-                        <div class="adText" style=" text-decoration: none;"></div>
-                        <span class="#" style="font-size:12px;">
-                        <a href="https://ads360.cf/" target="_blank" style="text-decoration: none;">
-                            Ad by ads360.cf</a>
-                        </span></div>
-                    </div>
-				
-				<footer>
-					<p><a href="#top">[Top]</a></p>
-				</footer>
-			</article>
-			<article id="random_ad">
-				<header>
-					<strong>Randon ad campaign</strong>
-				</header>
-<note>Display a different ad each time a user enters or refreshes a page.</note>
-<div class="language-plaintext highlighter-rouge">
-<div class="highlight">
-<pre class="highlight">
-<code>
-&lt;div&gt;&lt;script async src=&quot;./by_random.js&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;randomTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-</code>
-</pre>
-</div>
-</div>
-<p>👇 Output</p>
-                <div><script async src="./by_random.js"></script>
-                <!-- Display random ad on page onload-->
-                <span id="randomTextAd"></span>
-                <span class="align-items-center" style="font-size:12px;">
-                <a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
-                </span></div>
-                
-                <footer>
-					<p><a href="#top">[Top]</a></p>
-				</footer>
-			</article>
-			<article id="daily_ad">
-				<header>
-					<strong>Daily ad campaign</strong>
-				</header>
-				<note>Display the same ad all day.</note>
-<div class="language-plaintext highlighter-rouge">
-<div class="highlight">
-<pre class="highlight">
-<code>
-&lt;div&gt;&lt;script async src=&quot;./by_day.js&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;todayTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-</code>
-</pre>
-</div>
-</div>
-<p>👇 Output</p>              
-                <div><script async src="./by_day.js"></script>
-                    <!-- Daily display ad-->
-                    <span id="todayTextAd"></span>
-                    <span class="align-items-center" style="font-size:12px;">
-                    <a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
-                    </span></div>
-                    
-                    <footer>
-					<p><a href="#top">[Top]</a></p>
-				</footer>
-			</article>
-			<article id="weekly_ad">
-				<header>
-					<strong>Weekly ad campaign</strong>
-				</header>
-                <note>Display the same ad all week.</note>
-<div class="language-plaintext highlighter-rouge">
-<div class="highlight">
-<pre class="highlight">
-<code>
-&lt;div&gt;&lt;script async src=&quot;./by_week.js&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;weeklyTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-</code>
-</pre>
-</div>
-</div>
-<p>👇 Output</p>
-				<div><script async src="./by_week.js"></script>
-                    <!-- Weekly display ad-->
-                    <span id="weeklyTextAd"></span>
-                    <span class="align-items-center" style="font-size:12px;">
-                    <a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
-                    </span></div>
-
-				<footer>
-					<p><a href="#top">[Top]</a></p>
-				</footer>
-			</article>
-			<article id="monthly_ad">
-				<header>
-					<strong>Monthly ad campaign</strong>
-				</header>
-				
-                <note>Display the same ad for the whole month.</note>
-<div class="language-plaintext highlighter-rouge">
-<div class="highlight">
-<pre class="highlight">
-<code>
-&lt;div&gt;&lt;script async src=&quot;./by_month.js&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;monthlyTextAd&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-</code>
-</pre>
-</div>
-</div>
-<p>👇 Output</p>
-                <div><script async src="./by_month.js"></script>
-                    <!-- Monthly display ad-->
-                    <span id="monthlyTextAd"></span>
-                    <span class="align-items-center" style="font-size:12px;">
-                    <a href="https://ads360.cf/" style="text-decoration: none;" target="_blank">Ad by ads360.cf</a>
-                    </span></div>
-				
-				<footer>
-					<p><a href="#top">[Top]</a></p>
-				</footer>
-			</article>
-		</section>
-	</main>
+			</p>
+			<h2>Who is Ads360<sup>+</sup> for?</h2>
+			<p>It is good for webmasters, website owners, bloggers and many more.</p>
+		</main>
 	<footer>
-		<div>
-		<span>
-			<a href="/">Home</a>
-			<a href="#">Disclaimer</a>
-			<a href="#">Privacy</a>
-			<a href="#">Terms of Service</a>
-		</span>| © <span id="year"></span> <a  href="https://www.yorisi.com/" target="_blank" >YORISI LLC</a>
+		<div> © <span id="year"></span> <a  href="https://www.yorisi.com/" target="_blank" >YORISI LLC</a>
 			<script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
 		</div>
 	</footer>
