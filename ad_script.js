@@ -35,9 +35,9 @@ let currentAd = adtext.filter(function(todayAd) {
 let html = '';
  currentAd.forEach(adData => {
                 let htmlSegment = `
-                <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+                <div class="notice" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
                 <span>${adData.adText}</span><br>
-                <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow'>
+                <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow' target="_blank">
                 <span style="text-decoration: none;">${adData.adURL}</span></a></div>`;
         
                 html += htmlSegment;
@@ -62,9 +62,9 @@ async function renderByMonthAdText() {
    
   currentAd.forEach(adData => {
                   let htmlSegment = `
-                  <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+                  <div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
                   <span>${adData.adText}</span><br>
-                  <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow'>
+                  <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow' target="_blank">
                   <span style="text-decoration: none;">${adData.adURL}</span></a></div>`;
           
                   html += htmlSegment;
@@ -87,9 +87,9 @@ async function renderByWeekAdText() {
    
   currentAd.forEach(adData => {
                   let htmlSegment = `
-                  <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+                  <div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
                   <span>${adData.adText}</span><br>
-                  <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow'>
+                  <span>${adData.callToAction}</span> <a href='${adData.adURL}'rel='nofollow' target="_blank">
                   <span style="text-decoration: none;">${adData.adURL}</span></a></div>`;
           
                   html += htmlSegment;
@@ -110,9 +110,9 @@ async function renderByRandomAdText() {
   
   // For random row 
   let html = '';
-  let htmlSegment = `<div class="adNotice" style="width:330px;height:auto;padding:5px;">
+  let htmlSegment = `<div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
 <span>${adData.adText}</span><br>
-  <span>${adData.callToAction}</span> <a href='${adData.adURL}' rel='nofollow'>
+  <span>${adData.callToAction}</span> <a href='${adData.adURL}' rel='nofollow' target="_blank">
   <span style="text-decoration: none;">${adData.adURL}</span>
   </a></div>`; 
 
@@ -132,27 +132,27 @@ async function renderByTimeAdText() {
       if (currentHour < 12)
       // Morning 
           cycleAds = `
-  <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+  <div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
 <span>Use the promo code <mark>3x48mX</mark> to get 50% off your first month to any unlimited, all-you-can-wash membership with EverWash Car Club.
-Use my link: <a href='https://bit.ly/3KtPaNB' rel='nofollow'>
+Use my link: <a href='https://bit.ly/3KtPaNB' rel='nofollow' target="_blank">
   <span style="text-decoration: none;">https://bit.ly/3KtPaNB</span></a>
   </span></div>`;
   
       else if (currentHour >= 12 && currentHour <= 17)
       // Afternoon 
           cycleAds = `
-          <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+          <div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
 <span>I love MoneyGram's easy online transfers & you will too! Use my code <mark>RAFPCM2RN9</mark> for zero fees on your 1st transfer.
-              Try them at: <a href='https://bit.ly/3pwcAcM' rel='nofollow'>
+              Try them at: <a href='https://bit.ly/3pwcAcM' rel='nofollow' target="_blank">
   <span style="text-decoration: none;">https://bit.ly/3pwcAcM</span></a>
   </span></div>`;
           
       else if (currentHour >= 17 && currentHour <= 24)
       // Evening 
           cycleAds = `
-          <div class="adNotice" style="width:330px;height:auto;padding:5px;">
+          <div class="#" style="width:330px;height:auto;background-color:powderblue;padding:5px;">
 <span>Hey! I've been using Cash App to send money and spend using the Cash Card. Try it using my code <mark>JCMLKKL</mark> and you'll get $5.
-              Use my link: <a href='https://bit.ly/3sFOEWm' rel='nofollow'>
+              Use my link: <a href='https://bit.ly/3sFOEWm' rel='nofollow' target="_blank">
   <span style="text-decoration: none;">https://bit.ly/3sFOEWm</span></a>
   </span></div>`;
 
@@ -162,19 +162,3 @@ Use my link: <a href='https://bit.ly/3KtPaNB' rel='nofollow'>
   }
   
   renderByTimeAdText();
-
-  // Your CSS as text
-var styles = `
-/* For app style*/
-.adNotice {
-  background: var(--accent-bg);
-  border: 2px solid var(--border);
-  border-radius: 5px;
-  padding: 1.5rem;
-  margin: 0.1rem 0;
-}
-`
-
-var styleSheet = document.createElement("style")
-styleSheet.innerText = styles
-document.head.appendChild(styleSheet)

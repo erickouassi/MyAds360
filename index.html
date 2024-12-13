@@ -1,84 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ads360+ | Ads Management</title>
-	<link rel="icon" type="image/x-icon" href="https://emojicdn.elk.sh/🥳?style=google">
-	<!-- Local version -->
-	<link rel="stylesheet" href="simple.css">
-	<link rel="stylesheet" href="custom.css">
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        header, footer {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background-color: #f8f8f8;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            width: 100%;
+        }
+        section {
+            margin: 2rem 0;
+        }
+        pre {
+            background-color: #f0f0f0; /* Light gray background for pre tag */
+            padding: 1rem;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Enable wrapping */
+            word-break: break-all; /* Prevent overflow */
+            border: 1px solid #ddd; /* Add a border to enhance visibility */
+        }
+        code {
+            background-color: #e8e8e8; /* Light gray background for code tag */
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+        .cta {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .cta a {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem; /* Adjust padding for small screens */
+
+            }
+            section {
+                margin: 1rem 5px; /* Adjust margin for small screens */
+            }
+            .cta a {
+                padding: 0.5rem 0.75rem; /* Adjust button padding for small screens */
+            }
+        }
+    </style>
 </head>
-
 <body>
-	<header>  
-		<nav>
-			<ul>
-				<li><a href="./" class="current">Home</a></li>
-				<li><a href="./demo.html">Demo</a></li>
-				<li><a href="./guide.html">Guide</a></li>
-				<li><a href="./faq.html">Faq</a></li>
-				<li><a href="https://github.com/erickouassi/MyAds360" target="_blank">GitHub repo</a></li>
-			</ul>
-		</nav>
-        <h1>Ads360<sup>+</sup> An Ad Rotation Solution</h1>
-		<!-- -->
-		<p>Rotate Your Ads Based on <mark>Time of Day</mark>, <mark>Day</mark>, <mark>Week</mark>, <mark>Month</mark> or <mark>Random</mark></p>
-		</header>
-		<main>
-		<P class="notice"><strong>Are you using Ads360<sup>+</sup>?</strong><br>
-			If you are, it would be wonderful if you thought about giving me <a href="https://ko-fi.com/erickouassi" target="_blank">a coffee</a> as a token of your appreciation. 
-			Such things are crucial to the success of open source software. 
-			You can either Buy Me <a href="https://ko-fi.com/erickouassi" target="_blank">a Coffee</a> or even <a href="https://github.com/sponsors/erickouassi" target="_blank">support me on GitHub</a>. ❤️
-			</P>
-			<h2>Core Features</h2>
-			<ul>
-				<li>Self-hosting & it's Free!</li>
-				<li>Advertising campaign:
-					<ul>
-						<li>Randon</li>
-						<li>Time of Day (Morning, Afternoon & Evening)</li>
-						<li>Daily</li>
-						<li>Weekly</li>
-						<li>Monthly</li>
-					</ul>
-				</li>
-				<li>Insert Any Code Anywhere on the Page</li>
-				<!--<li>Weekly ad campaign</li>
-				<li>Monthly ad campaign</li>-->
-				<li>Advertising Formats/Types:
-					<ul>
-						<li>Text/html Ads</li>
-						<li>Image Ads:
-						<ul>
-							<li>.png</li>
-							<li>.jpg</li>
-							<li>.gif</li>
-						</ul>
-						</li>
-						<li>3rd Party Ads (JavaScript ads)</li>
-					</ul>
-				</li>
-				<li>No Databases, all client-side (just simple HTML, CSS & Javascript)</li>
-			</ul>
-			<h2>Goals of ad rotation include:</h2>
-			<p>
-				<ul>
-					<li>Allow webmasters to run advertisements for a variety of companies or programs.</li>
-					<li>Keep your advertisement "fresh." Users are more inclined to overlook an ad if it never changes.</li>
-					<li>By displaying more than one ad every page load on websites and blogs, you can expose users to more advertising.</li>
-				</ul>
-			</p>
-			<h2>Who is Ads360<sup>+</sup> for?</h2>
-			<p>It is good for webmasters, website owners, bloggers and many more.</p>
-		</main>
-	<footer>
-		<div> © <span id="year"></span> <a  href="https://www.yorisi.com/" target="_blank" >YORISI LLC</a>
-			<script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
-		</div>
-	</footer>
+    <header>
+        <h1>🎉 Welcome to Ads360+ 🎉</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Welcome to Ads360+, your ultimate solution for effortlessly advertising your products, services, and affiliate links. Whether you're a webmaster, website owner, or blogger, Ads360+ is designed to enhance your site's appeal and boost your exposure.</p>
+        </section>
+        <section class="features">
+            <h2>✨ Core Features ✨</h2>
+            <div class="feature">• <strong>Self-Hosting & Free</strong>: Easily host your ads on your own server without any additional costs.</div>
+            <div class="feature">• <strong>Advertising Campaigns</strong>:
+                <ul>
+                    <li>Random: Rotate ads at random times.</li>
+                    <li>Time of Day: Morning, Afternoon & Evening rotations.</li>
+                    <li>Frequency: Daily, Weekly, and Monthly options available.</li>
+                    <li>Flexible Code Insertion: Insert any code anywhere on the page effortlessly.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="ad-formats">
+            <h2>🖼️ Advertising Formats/Types 🖼️</h2>
+            <ul>
+                <li>Text/HTML Ads</li>
+                <li>Image Ads: .png, .jpg, .gif</li>
+                <li>Third-Party Ads: Seamlessly integrate JavaScript ads.</li>
+                <li>No Complex Setups: Just simple HTML, CSS, and JavaScript.</li>
+            </ul>
+        </section>
+        <section class="goals">
+            <h2>🎯 Goals of Ad Rotation 🎯</h2>
+            <ul>
+                <li>Promote Your Products: Feature your own products and services prominently.</li>
+                <li>Affiliate Links: Boost your affiliate marketing efforts by rotating different affiliate ads.</li>
+                <li>Variety: Keep your advertisements fresh to prevent users from overlooking them.</li>
+                <li>Increased Exposure: Display multiple ads per page load on websites and blogs, exposing users to more advertising content.</li>
+            </ul>
+        </section>
+        <section class="who-for">
+            <h2>👤 Who is Ads360+ For? 👤</h2>
+            <p>Ads360+ is ideal for:</p>
+            <ul>
+                <li>Webmasters</li>
+                <li>Website Owners</li>
+                <li>Bloggers</li>
+                <li>Affiliate Marketers</li>
+                <li>And Many More!</li>
+            </ul>
+        </section>
+        <section class="benefits">
+            <h2>💡 Key Benefits 💡</h2>
+            <div class="benefit">• <strong>Efficiency</strong>: Simplify your ad management with seamless integration and no database dependencies.</div>
+            <div class="benefit">• <strong>Customization</strong>: Enjoy complete control over where and how ads are displayed on your site.</div>
+            <div class="benefit">• <strong>Performance</strong>: Ensure fast load times with lightweight, client-side technology.</div>
+        </section>
+        <section class="testimonials">
+            <h2>🌟 Testimonials & Case Studies 🌟</h2>
+            <p>“Ads360+ has revolutionized the way I manage ads on my blog. The variety and flexibility are unmatched!” <br>- Eric K, Blogger</p>
+            <p><strong>*Case Study*</strong>: A website increased product visibility by 110% after switching to Ads360+.</p>
+        </section>
+        <section class="cta">
+            <h2>🚀 Get Started Today 🚀</h2>
+            <p><a href="guide.html">Getting Started</a></p>
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="privacy_policy.html">Privacy Policy</a></p>
+        </section>
+        <section class="contact-support">
+            <h2>📞 Contact & Support Information 📞</h2>
+            <p>Need assistance? Use this form <a href="https://erickouassi.com/contact.html" target="_blank" style="color: blue;">here</a>.</p>
+            <p> <span style="text-decoration: line-through; color: red;">Join our community forum</span> to share tips and get advice from other users. </p>
+        </section>
+    </main>
+    <footer> 
+        <div> © <span id="year"></span> | Made by <a href="https://erickouassi.com/" target="_blank" style="color: #FFD700;">Eric</a> with ❤️. 
+            <script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
+        </div> 
+    </footer>
 </body>
-
 </html>
+

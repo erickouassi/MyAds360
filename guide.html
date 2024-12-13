@@ -1,97 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ads360.cf | Ads Management</title>
-	<link rel="icon" type="image/x-icon" href="https://emojicdn.elk.sh/🥳?style=google">
-	<!-- Local version -->
-	<link rel="stylesheet" href="simple.css">
-	<link rel="stylesheet" href="custom.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads360+ Getting Started</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        header, footer {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background-color: #f8f8f8;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            width: 100%;
+        }
+        section {
+            margin: 2rem 0;
+        }
+        pre {
+            background-color: #f0f0f0; /* Light gray background for pre tag */
+            padding: 1rem;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Enable wrapping */
+            word-break: break-all; /* Prevent overflow */
+            border: 1px solid #ddd; /* Add a border to enhance visibility */
+        }
+        code {
+            background-color: #e8e8e8; /* Light gray background for code tag */
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+        .cta {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .cta a {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem; /* Adjust padding for small screens */
+            }
+            section {
+                margin: 1rem 0; /* Adjust margin for small screens */
+            }
+            .cta a {
+                padding: 0.5rem 0.75rem; /* Adjust button padding for small screens */
+            }
+        }
+    </style>
 </head>
-
-<body id="top">
-	<header>  
-		<nav>
-			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./demo.html">Demo</a></li>
-				<li><a href="./guide.html" class="current">Guide</a></li>
-				<li><a href="faq.html">Faq</a></li>
-				<li><a href="https://github.com/erickouassi/MyAds360" target="_blank">GitHub repo</a></li>
-			</ul>
-		</nav>
-        <h1>Guide</h1>
-        <p>Self-hosting: (Plan ahead and schedule your ads)</p>
+<body>
+    <header>
+        <h1>🎉 Getting Started with Ads360+ 🎉</h1>
     </header>
     <main>
-		<section id="example">
-			<h2>Getting started</h2>
-			<p>Fork this repository <a href="https://github.com/erickouassi/MyAds360/fork" target="_blank">https://github.com/erickouassi/MyAds360/fork</a> in your account.</p>
-			<h4>How to</h3>
-            <ol>
-                <li>First of all, make local copies of my <a href="./ad_data.json" style="text-decoration: none;"><code>ad_data.json↗️</code></a> and <a href="./ad_script.js" style="text-decoration: none;"><code>ad_script.js↗️</code></a> files into a new directory on your local machine.</li>
-                <li><p>Open now your own file <a href="./ad_data.json" style="text-decoration: none;"><code>ad_data.json↗️</code></a>, 
-                    replace all the value except<br> 
-                    <code>&quot;id&quot;: &quot;72&quot;,</code>  <code>&quot;category&quot;: &quot;weekNumber&quot;, and
-                        &quot;frequency&quot;: &quot;53&quot;</code> as an example.<br></p>
-                   <p>Example of ad data:<br>
-                      <code>{</code><br />
-                       <code>&quot;id&quot;: &quot;72&quot;,</code><br />
-                        &quot;created_on&quot;: &quot;5/12/2022&quot;,<br />
-                        <code>&quot;category&quot;: &quot;weekNumber&quot;,<br />
-                        &quot;frequency&quot;: &quot;53&quot;,</code><br />
-                        &quot;reference&quot;: &quot;Referral program&quot;,<br />
-                        &quot;adURL&quot;: &quot;https://bit.ly/35qVQwT&quot;,<br />
-                        &quot;adText&quot;: &quot;Hey, we can both earn $10 ...&quot;,<br />
-                        &quot;callToAction&quot;: &quot;Use my link:&quot;,<br />
-                        &quot;company&quot;: &quot;PayPal&quot;<br />
-                      <code>},</code><br /></p></li>
-                <li>Now, go to file <a href="./ad_script.js" style="text-decoration: none;"><code>ad_script.js↗️</code></a> to change the advert to your own.<br>
-                    <p>Example of ad data:<br>
-                    <code>cycleAds = `</code>&lt;div class=&quot;#&quot; style=&quot;width:330px;height:auto;background-color:powderblue;padding:5px;&quot;&gt;<br />
-          &lt;span&gt;Hey! I've been using Cash App to send money and spend using the Cash Card. Try it using my code &lt;mark&gt;JCMLKKL&lt;/mark&gt; and you'll get $5.<br />
-                        Use my link: &lt;a href='https://bit.ly/3sFOEWm' rel='nofollow'&gt;<br />
-            &lt;span style=&quot;text-decoration: none;&quot;&gt;https://bit.ly/3sFOEWm&lt;/span&gt;&lt;/a&gt;<br />
-            &lt;/span&gt;&lt;/div&gt;<code>`;</code>
-                </p>
-                </li>
-                <li>
-					<p>Add this JavaScript code snippet to any page and your ad will show automatically:<br>
-<pre class="highlight">
-<code>
-&lt;div&gt;
-&lt;script src=&quot;./ad_script.js&quot;&gt;&lt;/script&gt;
-&lt;div id=&quot;randomTextAd&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-👇 Output Random ad
-<div>
-	<script src="./ad_script.js"></script>
-	<div id="randomTextAd"></div>
-</div>
-</p>
-				</li>
-				<li>That is all! 👏🏿👏🏿👏🏿👏🏿👏🏿</li>
-            </ol>
-			<p><mark>Note on the JavaScript code snippet:</mark> 
-				<ul>
-					<li>id="<code>randomTextAd</code>" indicates random ad</li>
-					<li>id="<code>timeTextAd</code>" indicates time of day (Morning, Afternoon & Evening) ad</li>
-					<li>id="<code>todayTextAd</code>" indicates daily ad</li>
-					<li>id="<code>weeklyTextAd</code>" indicates weekly ad</li>
-					<li>id="<code>monthlyTextAd</code>" indicates monthly ad</li>
-				</ul>
-			</p>
+        <section>
+            <h2>Getting Started</h2>
+            <p>Fork this repository <a href="https://github.com/erickouassi/MyAds360/fork" target="_blank">https://github.com/erickouassi/MyAds360/fork</a> in your account.</p>
         </section>
-	</main>
-	<footer>
-		<div> © <span id="year"></span> <a  href="https://www.yorisi.com/" target="_blank" >YORISI LLC</a>
-			<script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
-		</div>
-	</footer>
+        <section>
+            <h2>How to</h2>
+            <p>First of all, make local copies of my <code>ad_data.json</code> and <code>ad_script.js</code> files into a new directory on your local machine.</p>
+            <p>Open your own file <code>ad_data.json</code>, replace all the values except <code>"id": "72", "category": "weekNumber", and "frequency": "53"</code> as an example.</p>
+            <p>Example of ad data:<br>
+                <code>{</code><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<code>"id": "72",</code><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"created_on": "5/12/2022",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<code>"category": "weekNumber",</code><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<code>"frequency": "53",</code><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"reference": "Referral program",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"adURL": "https://bit.ly/35qVQwT",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"adText": "Hey, we can both earn $10 ...",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"callToAction": "Use my link:",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"company": "PayPal"<br />
+                <code>},</code><br />
+            </p>
+        </section>
+        <section>
+            <h2>Updating ad_script.js</h2>
+            <p>Go to the file <code>ad_script.js</code> to change the advert to your own.</p>
+            <p>Example of ad data:<br>
+                <code>cycleAds = `&lt;div class=&quot;#&quot; style=&quot;width:330px;height:auto;background-color:powderblue;padding:5px;&quot;&gt;</code><br />
+                <code>&lt;span&gt;Hey! I've been using Cash App to send money and spend using the Cash Card. Try it using my code &lt;mark&gt;JCMLKKL&lt;/mark&gt; and you'll get $5.</code><br />
+                <code>Use my link: &lt;a href='https://bit.ly/3sFOEWm' rel='nofollow'&gt;</code><br />
+                <code>&lt;span style=&quot;text-decoration: none;&quot;&gt;https://bit.ly/3sFOEWm&lt;/span&gt;&lt;/a&gt;</code><br />
+                <code>&lt;/span&gt;&lt;/div&gt;;</code>
+            </p>
+        </section>
+        <section>
+            <h2>Adding JavaScript Code Snippet</h2>
+            <p>Add this JavaScript code snippet to any page and your ad will show automatically:</p>
+            <pre>
+&lt;div&gt;
+    &lt;script src=&quot;./ad_script.js&quot;&gt;&lt;/script&gt;
+    &lt;div id=&quot;randomTextAd&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <p>👇 Output Random ad</p>
+            <p>That is all! 👏🏿👏🏿👏🏿👏🏿👏🏿</p>
+        </section>
+        <section>
+            <h2>Note on the JavaScript Code Snippet</h2>
+            <p><code>id="randomTextAd"</code> indicates random ad.</p>
+            <p><code>id="timeTextAd"</code> indicates time of day (Morning, Afternoon & Evening) ad.</p>
+            <p><code>id="todayTextAd"</code> indicates daily ad.</p>
+            <p><code>id="weeklyTextAd"</code> indicates weekly ad.</p>
+            <p><code>id="monthlyTextAd"</code> indicates monthly ad.</p>
+        </section>
+        <section class="cta">
+            <p><a href="index.html">Back to Homepage</a></p>
+        </section>
+    </main>
+    <footer> 
+        <div> © <span id="year"></span> | Made by <a href="https://erickouassi.com/" target="_blank" style="color: #FFD700;">Eric</a> with ❤️. 
+            <script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script> 
+        </div> 
+    </footer>
 </body>
-
 </html>
